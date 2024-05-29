@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "My-Font";
+  src: url("./aleo-regular-webfont.woff2") format("woff2"),
+    url("./aleo-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "My-Font";
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+header {
+  display: grid;
+  padding: 25px;
+  grid-template-columns: 1fr 4fr;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(255, 253, 253, 0.85);
+  border-radius: 15px;
+  border: 3px solid rgb(101, 100, 100);
+}
+
+header nav button {
+  padding: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  text-shadow: 1px 1px 0.31px rgb(194, 167, 167);
+  cursor: pointer;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 42px;
+}
+
+#leftContainer {
+  display: grid;
+}
